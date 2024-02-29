@@ -1,5 +1,5 @@
-import { BackgroundImage } from '@/components/SVGComponents'
-import NavbarComponent from '@/components/NavbarComponent'
+import { BackgroundImage } from '@/components/upscale/SVGComponents'
+import NavbarComponent from '@/components/upscale/NavbarComponent'
 import { useEffect } from 'react'
 
 export default function About() {

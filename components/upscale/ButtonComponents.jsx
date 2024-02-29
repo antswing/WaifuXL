@@ -1,4 +1,4 @@
-import { CopySVG, DownloadSVG, UploadingSVG } from '@/components/SVGComponents'
+import { CopySVG, DownloadSVG, UploadingSVG } from '@/components/upscale/SVGComponents'
 import { downloadImage, getDataURIFromInput, uploadToImgur } from '@/services/imageUtilities'
 import { useAppStateStore, useImageStore } from '@/services/useState'
 

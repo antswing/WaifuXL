@@ -1,4 +1,4 @@
-import { CloseSVG, ErrorSVG } from '@/components/SVGComponents'
+import { CloseSVG, ErrorSVG } from '@/components/upscale/SVGComponents'
 
 import { useAppStateStore } from '@/services/useState'
 

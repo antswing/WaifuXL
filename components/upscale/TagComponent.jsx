@@ -1,7 +1,7 @@
-import { LeftArrowSVG, RighArrowSVG } from '@/components/SVGComponents'
+import { LeftArrowSVG, RighArrowSVG } from '@/components/upscale/SVGComponents'
 
 import ProgressBar from '@ramonak/react-progress-bar'
-import Tooltip from '@/components/TooltipComponent'
+import Tooltip from '@/components/upscale/TooltipComponent'
 import { useState } from 'react'
 
 const TagComponent = ({ tags }) => {

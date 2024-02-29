@@ -1,8 +1,8 @@
-import { DoneButtonComponent, PresetSelectorComponent, UploadButtonComponent } from '@/components/ButtonComponents'
+import { DoneButtonComponent, PresetSelectorComponent, UploadButtonComponent } from '@/components/upscale/ButtonComponents'
 import { useAppStateStore, useImageStore } from '@/services/useState'
 import { useEffect, useRef } from 'react'
 
-import { CloseSVG } from '@/components/SVGComponents'
+import { CloseSVG } from '@/components/upscale/SVGComponents'
 import { setDataURIFromFile } from '@/services/imageUtilities'
 
 function ModalComponent() {

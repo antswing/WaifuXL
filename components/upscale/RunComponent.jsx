@@ -1,7 +1,7 @@
 import { initializeONNX, upScaleFromURI } from '@/services/inference/utils'
 import { useAppStateStore, useImageStore } from '@/services/useState'
 
-import { UpscaleSVG } from '@/components/SVGComponents'
+import { UpscaleSVG } from '@/components/upscale/SVGComponents'
 
 const RunComponent = () => {
   const { setOutputURI, setUpscaleFactor, setTags, inputURI, extension, upscaleFactor } = useImageStore()

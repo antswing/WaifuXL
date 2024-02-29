@@ -1,8 +1,8 @@
 import { createRef, useEffect, useState } from 'react'
 
-import { BackgroundImage } from '@/components/SVGComponents'
+import { BackgroundImage } from '@/components/upscale/SVGComponents'
 import Image from 'next/image'
-import NavbarComponent from '@/components/NavbarComponent'
+import NavbarComponent from '@/components/upscale/NavbarComponent'
 import kofi from '@/public/images/koficup.webp'
 import pj from '@/public/images/chibi_pablo.webp'
 import { sleep } from '@/services/inference/utils'

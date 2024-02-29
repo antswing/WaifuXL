@@ -1,9 +1,9 @@
-import { CopyComponent, DownloadComponent } from '@/components/ButtonComponents'
+import { CopyComponent, DownloadComponent } from '@/components/upscale/ButtonComponents'
 import { useAppStateStore, useImageStore } from '@/services/useState'
 
-import RunComponent from '@/components/RunComponent'
-import TagComponent from '@/components/TagComponent'
-import { UploadSVG } from '@/components/SVGComponents'
+import RunComponent from '@/components/upscale/RunComponent'
+import TagComponent from '@/components/upscale/TagComponent'
+import { UploadSVG } from '@/components/upscale/SVGComponents'
 
 const Sidebar = () => {
   const { outputURI, tags } = useImageStore()

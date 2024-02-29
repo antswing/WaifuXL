@@ -1,4 +1,4 @@
-import { ErrorSVG } from '@/components/SVGComponents'
+import { ErrorSVG } from '@/components/upscale/SVGComponents'
 import { useAppStateStore } from '@/services/useState'
 
 export default function Error() {

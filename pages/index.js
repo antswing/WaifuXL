@@ -1,17 +1,18 @@
-import { CopyComponent, DownloadComponent } from '@/components/ButtonComponents'
-import { ModalComponent, UploadButtonComponent } from '@/components/ModalComponent'
-import { Sidebar, UpscaleFactorComponent } from '@/components/SidebarComponent'
+import { CopyComponent, DownloadComponent } from '@/components/upscale/ButtonComponents'
+import { ModalComponent, UploadButtonComponent } from '@/components/upscale/ModalComponent'
+import { Sidebar, UpscaleFactorComponent } from '@/components/upscale/SidebarComponent'
 import { useAppStateStore, useImageStore } from '@/services/useState'
 
-import { BackgroundImage } from '@/components/SVGComponents'
-import Error from '@/components/ErrorComponent'
-import Feedback from '@/components/FeedbackModal'
-import ImageDisplay from '@/components/ImageDisplayComponent'
-import NavbarComponent from '@/components/NavbarComponent'
-import RunComponent from '@/components/RunComponent'
-import WaifuProgressComponent from '@/components/WaifuProgComponent'
+import { BackgroundImage } from '@/components/upscale/SVGComponents'
+import Error from '@/components/upscale/ErrorComponent'
+import Feedback from '@/components/upscale/FeedbackModal'
+import ImageDisplay from '@/components/upscale/ImageDisplayComponent'
+import NavbarComponent from '@/components/upscale/NavbarComponent'
+import RunComponent from '@/components/upscale/RunComponent'
+import WaifuProgressComponent from '@/components/upscale/WaifuProgComponent'
 import { useEffect } from 'react'
 import { useWindowSize } from '@/services/windowUtilities'
+import Layout from '@/components/layout'
 
 export default function Main() {
   const size = useWindowSize()
@@ -22,11 +23,10 @@ export default function Main() {
   }, [size])
 
   return (
-    <>
+    <Layout>
       <MobileLayout />
       <DesktopLayout />
-      <BackgroundImage />
-    </>
+    </Layout>
   )
 }
 
@@ -73,9 +73,8 @@ function DesktopLayout() {
     <div className="overflow-hidden hidden md:block min-h-screen">
       <Error />
       <Feedback />
-      <ModalComponent />
       <main className="flex-1">
-        <NavbarComponent currentPage="index" />
+        <ModalComponent />
         <Sidebar />
         <div className="h-3/4 grow w-full">
           <ImageDisplay />

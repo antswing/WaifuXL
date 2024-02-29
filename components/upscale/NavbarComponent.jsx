@@ -1,4 +1,4 @@
-import { GitHubSVG } from '@/components/SVGComponents'
+import { GitHubSVG } from '@/components/upscale/SVGComponents'
 import Link from 'next/link'
 import NewsBox from './NewsBox'
 import { useAppStateStore } from '@/services/useState'
@@ -28,11 +28,6 @@ const NavbarComponent = ({ currentPage }) => {
             </Link>
           </div>
         </nav>
-        {currentPage === 'index' && !mobile && (
-          <div className="flex flex-initial flex-row absolute left-0 top-full">
-            <NewsBox />
-          </div>
-        )}
       </header>
     </>
   )
